@@ -1,22 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Demo() {
-  const capitals = ["dhaka", "delhi", "karachi", "hanoi", "london", "paris"];
+  const [number,setNumber] = useState(0);
   return (
     <>
-      <h1 style={{ color: "red" }}>
-        {capitals.map((city, i) => {
-          return <p key={i}>{city}</p>;
-        })}
-      </h1>
-      <p className="text-6xl text-purple-500">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur,
-        nostrum deserunt et quos similique ut quae beatae sapiente iure,
-        provident quod ducimus dolorem necessitatibus ab? Amet quia ipsam nihil
-        blanditiis soluta, doloremque et dolores obcaecati fugit, suscipit odio
-        illo ratione. Optio, modi. Quasi repudiandae ratione repellendus
-        dignissimos porro soluta praesentium.
-      </p>
+     <h1>Number : {number}</h1>
+     <button onClick={()=>setNumber(number+1)}>Increment</button>
+     <button onClick={()=>setNumber(number-1)}>Decrement</button>
+     <button onClick={()=>setNumber(0)}>Reset</button>
     </>
   );
 }
