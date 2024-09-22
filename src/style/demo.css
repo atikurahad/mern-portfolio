@@ -3,4 +3,10 @@ button{
     color: white;
     margin: auto;
     padding: 8px;
+} 
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+
 }
